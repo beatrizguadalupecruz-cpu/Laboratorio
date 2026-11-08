@@ -33,7 +33,7 @@ repositorio/
 **Paso 1.** Clonar el repositorio.
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/beatrizguadalupecruz-cpu/Laboratorio
 ```
 
 **Paso 2.** Ingresar al proyecto.
@@ -89,16 +89,16 @@ python detector.py
 
 | Prueba | Usuario | MTTD (segundos) | MTTR (segundos) |
 |---|---|---|---|
-| 1 | usuario_02 | 7.0 | 4.0 |
-| 2 | usuario_03 | 4.0 | 6.0 |
-| 3 | usuario_04 | 10.0 | 3.0 |
+| 1 | admin | 16.0 | 85.0 |
+| 2 | Summer | 15.0 | 34.0 |
+| 3 | Beatriz | 15.0 | 7.0 |
 
 En cada prueba se realizaron tres intentos fallidos de inicio de sesión sobre un usuario distinto, con distinta separación entre intentos, y luego se ejecutó `detector.py`.
 
 - **MTTD** = hora de detección (tercer intento fallido) − hora del primer intento fallido.
 - **MTTR** = hora de la respuesta (bloqueo registrado en `respuesta.log`) − hora de detección.
-- **MTTD promedio** = (7.0 + 4.0 + 10.0) / 3 = `7.0` segundos
-- **MTTR promedio** = (4.0 + 6.0 + 3.0) / 3 = `4.33` segundos
+- **MTTD promedio** = (16.0 + 15.0 + 15.0) / 3 = `15.33` segundos
+- **MTTR promedio** = (85.0 + 34.0 + 7.0) / 3 = `42.00` segundos
 
 ## 7. Conclusiones
 
